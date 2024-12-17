@@ -35,7 +35,25 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/erp-mono-repo-e2e/**/*"]
+      "exclude": [
+        "apps/erp-mono-repo-e2e/**/*",
+        "apps-e2e/**/*",
+        "roles-e2e/**/*",
+        "roles-e2e/**/*",
+        "apps/roles-e2e/**/*"
+      ]
     }
-  ]
+  ],
+  "targetDefaults": {
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  },
+  "release": {
+    "version": {
+      "preVersionCommand": "npx nx run-many -t build"
+    }
+  }
 }

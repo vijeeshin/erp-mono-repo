@@ -1,0 +1,17 @@
+{
+  "name": "roles-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["roles"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "apps/roles-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "dependsOn": ["roles:build"]
+    }
+  }
+}

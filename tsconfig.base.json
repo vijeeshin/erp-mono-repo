@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@erp/libs/common/app-config": ["libs/common/app-config/src/index.ts"],
+      "@erp/libs/common/auth": ["libs/common/auth/src/index.ts"],
+      "@erp/libs/common/db": ["libs/common/db/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

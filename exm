@@ -1,0 +1,3 @@
+https://github.com/LegendisM/microservice.example/blob/4512dd0dab4b242745b0bb807a61bf99f2c7f4b5/libs/authentication/src/strategy/jwt.strategy.ts
+
+DATABASE_URL="postgresql://postgres.ecoteuwnxqssrnhxoviy:K4hvdq9tj9Rlx10261210@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"

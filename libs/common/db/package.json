@@ -1,0 +1,13 @@
+{
+  "name": "@erp/libs/common/db",
+  "version": "0.0.1",
+  "dependencies": {
+    "@nestjs/typeorm": "^10.0.2",
+    "pg": "^8.13.1",
+    "tslib": "^2.3.0",
+    "typeorm": "^0.3.20"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts"
+}

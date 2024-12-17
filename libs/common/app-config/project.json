@@ -1,0 +1,20 @@
+{
+  "name": "app-config",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/common/app-config/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/common/app-config",
+        "tsConfig": "libs/common/app-config/tsconfig.lib.json",
+        "packageJson": "libs/common/app-config/package.json",
+        "main": "libs/common/app-config/src/index.ts",
+        "assets": ["libs/common/app-config/*.md"]
+      }
+    }
+  }
+}
